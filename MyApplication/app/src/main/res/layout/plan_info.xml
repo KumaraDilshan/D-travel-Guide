@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/plan_info_close"
+        android:background="@android:color/transparent"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture1"
+        android:layout_below="@+id/toolbar8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture2"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture3"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView7"
+        android:layout_marginLeft="20dp"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture4"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture5"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:id="@+id/imageView9"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icture6"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignLeft="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9"
+        android:id="@+id/imageView10"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView11"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView12"
+        android:layout_below="@+id/toolbar8"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginTop="42dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView13"
+        android:layout_below="@+id/imageView11"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:text="Public transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_below="@+id/imageView11"
+        android:layout_toRightOf="@+id/imageView12"
+        android:layout_toEndOf="@+id/imageView12"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:text="Tuk Tuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/imageView12"
+        android:layout_toRightOf="@+id/imageView13"
+        android:layout_toEndOf="@+id/imageView13" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView14"
+        android:layout_below="@+id/textView18"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7" />
+
+    <TextView
+        android:text="Ferry path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_toRightOf="@+id/imageView16"
+        android:layout_toEndOf="@+id/imageView16"
+        android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView15"
+        android:layout_below="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:text="On foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_below="@+id/imageView13"
+        android:layout_toRightOf="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14" />
+
+    <TextView
+        android:text="Off road"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_above="@+id/imageView10"
+        android:layout_toRightOf="@+id/imageView15"
+        android:layout_toEndOf="@+id/imageView15"
+        android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icture11"
+        android:id="@+id/imageView16"
+        android:layout_below="@+id/imageView9"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_alignRight="@+id/imageView15"
+        android:layout_alignEnd="@+id/imageView15" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icons info"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="normal|bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:clickable="false"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.00"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/plan_info_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Your vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textSize="20sp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:layout_above="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11" />
+
+</RelativeLayout>

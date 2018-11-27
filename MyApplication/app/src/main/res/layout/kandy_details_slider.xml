@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kandy_details_slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gerrie.myapplication.new3">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/description_toolbar_kandy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+
+        app:titleTextColor="@color/cast_expanded_controller_text_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_kandy"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/description_toolbar_kandy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/SliderDots_kandy"
+        android:layout_below="@+id/viewPager_kandy"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disease1_kandy"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/SliderDots_kandy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp">
+
+        <ScrollView
+            android:id="@+id/scroll_kandy"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_above="@+id/disease2_kandy"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disease3_kandy"
+                android:weightSum="1"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/viewPager_kandy"
+                android:layout_alignParentBottom="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_description_des_kandy"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:textAllCaps="false"
+                    android:textAlignment="gravity"
+                    android:textSize="16sp"
+                    android:breakStrategy="balanced"
+                    android:gravity="left|right"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/disease2_kandy"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp">
+
+            <Button
+                android:text="Directions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/directions_kandy"
+                android:background="@drawable/my_button_bg1"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Add to favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favourite_kandy"
+                android:background="@drawable/my_button_bg1"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="9dp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Add event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_calendar_event_kandy"
+                android:background="@drawable/my_button_bg1"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="0.2"
+                android:layout_marginRight="0dp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

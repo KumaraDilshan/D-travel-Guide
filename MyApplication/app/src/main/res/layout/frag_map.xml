@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map100"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fit_map"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="306dp"
+        android:text="Fit"/>
+
+    <Button
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_map_main"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="306dp"
+        android:text="Filter"
+        android:textSize="11sp"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp" />
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_sri_lanka"
+            android:icon="@drawable/ic_menu_information"
+            android:title="About sri lanka" />
+        <item
+            android:id="@+id/explore_travel_destinations"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Explore travel destinations" />
+
+        <item
+            android:id="@+id/weather"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Weather" />
+
+        <item
+            android:id="@+id/hotels"
+            android:icon="@drawable/ic_menu_hotels"
+            android:title="Reveal and book hotels" />
+
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Events in Sri Lanka" />
+
+        <item
+            android:id="@+id/travelling_plans"
+            android:icon="@drawable/ic_menu_plan"
+            android:title="Travelling plans for me" />
+
+        <item
+            android:id="@+id/todo_list"
+            android:icon="@drawable/ic_menu_todo"
+            android:title="ToDo list" />
+
+        <item
+            android:id="@+id/favourite_places"
+            android:icon="@drawable/ic_menu_favourite"
+            android:title="My favourite places" />
+
+    </group>
+
+    <item android:title="Application info">
+        <menu>
+            <item
+                android:id="@+id/Help"
+                android:icon="@drawable/ic_menu_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/about_the_app"
+                android:icon="@drawable/ic_menu_about"
+                android:title="About the app" />
+        </menu>
+    </item>
+
+</menu>

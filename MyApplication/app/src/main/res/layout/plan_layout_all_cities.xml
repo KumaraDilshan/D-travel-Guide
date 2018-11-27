@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:id="@+id/plan_layout_all_cities">
+
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/close_plans"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:clickable="false"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.00"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/close_plans"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+        app:titleTextColor="@color/cast_expanded_controller_text_color"
+        android:layout_weight="1"
+        app:title="Traveling plans" />
+
+    <ScrollView
+        android:id="@+id/scroll_plans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar5"
+        android:layout_alignBottom="@+id/button3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_plans"
+            android:weightSum="1"
+            android:layout_below="@+id/toolbar5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Please select a city to get traveling plans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:text="Jaffnna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jaffna_plans"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Anuradhapurapura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apura_plans"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Kandy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kandy_plans"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="135dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Galle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/galle_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="185dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Mannar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mannar_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="235dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Trincomalee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trinco_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="285dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Dambulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dambulla_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="335dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Baticaloa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/baticaloa_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="385dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Colombo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/colombo_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="435dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Mathale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mathale_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="485dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Mathara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mathara_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="535dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Nuwaraeliya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nuwara_eliya_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="585dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Badulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badulla_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="635dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Vilpattu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vilpattu_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="685dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Yala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yala_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="735dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Mineriya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minneriya_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1385dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Hatton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hatton_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1335dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Udawalawe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/udawalawe_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1285dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Dambadeniya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dambadeniya_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1235dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Kalmunai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kalmunei_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1185dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Dehiwala-Mount Laviniya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dehiwala_mount_laviniya_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1135dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Polonnaruwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/polonnaruwa_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1085dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Kegalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kegalle_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1035dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Rathnapura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rathnapura_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="985dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Haputhale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/haputhale_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="935dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Ella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ella_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="885dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Bandarawela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bandarawela_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="835dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Katharagama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/katharagama_plans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="785dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

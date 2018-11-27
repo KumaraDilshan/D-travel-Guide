@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1D25">
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ad3737"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="About"
+        app:titleTextColor="@color/cardview_light_background"
+        android:id="@+id/about_app_toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/about_app_toolbar"
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon8"
+                android:id="@+id/imageView4"
+                android:paddingTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:text="Version 1.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView46"
+                android:gravity="center"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="This application is a source of Travel information relevant to Sri Lanka. You can simply use this app to travel all over the beautiful, historical, cultural, religious and naturally valued places inside Sri Lanka. The nodes are noted in a map view and using that you can see what are the important places regarding various cities. Also, the images, directions, and details of individual places are included in the application. The nearby traveling destinations, current weather of them, nearby service places, restaurants, hotels, bars, spa, and all important destinations are shown in the application."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:gravity="left" />
+
+            <TextView
+                android:text="The most important feature of this application is this capable to inform various traveling plans regarding cities in Sri Lanka. You can have practical plans to cover destinations in several cities. Other than that, you are facilitated to manage your traveling events for destinations with the mobile calendar through the application. The hotel details of Sri Lanka and the booking hotels feature is enabled in this. Also, the events happening in Sri Lanka also updated in the application. This is actually an important overview of exploring Sri Lanka for a traveler."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:text="If you are willing to suggest any development or a correction regarding the application, please send an E-mail to dilshan.abeysinghe@eng.pdn.ac.lk by mentioning your subject."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

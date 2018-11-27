@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1D25">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_task_favourite"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ad3737"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="0dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="16dp"
+                android:paddingRight="4dp"
+                android:textColor="#ffffff"
+                android:text="Favourite Destinations"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_add"
+                android:onClick="openAddTask"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/loader_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView_favourite"
+        android:layout_below="@+id/toolbar_task_favourite"
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:id="@+id/next_cardview_favourite"
+                android:clickable="false">
+
+                <com.example.gerrie.myapplication.NoScrollListView_favourite
+                    android:id="@+id/taskListUpcoming_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimary"
+                    android:divider="#333232"
+                    android:dividerHeight="1dp"
+                    android:visibility="visible"
+                    android:clickable="false" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/todayText_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Today"
+                android:textSize="16sp"
+                android:textColor="#CCCCCC"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:id="@+id/today_cardview_favourite"
+                android:clickable="false">
+
+                <com.example.gerrie.myapplication.NoScrollListView_favourite
+                    android:id="@+id/taskListToday_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimary"
+                    android:divider="#333232"
+                    android:dividerHeight="1dp"
+                    android:visibility="visible"
+                    android:clickable="false" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tomorrowText_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Tomorrow"
+                android:textSize="16sp"
+                android:textColor="#CCCCCC"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                android:id="@+id/tomorrow_cardview_favourite"
+                android:clickable="false">
+
+                <com.example.gerrie.myapplication.NoScrollListView_favourite
+                    android:id="@+id/taskListTomorrow_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimary"
+                    android:divider="#333232"
+                    android:dividerHeight="1dp"
+                    android:visibility="visible"
+                    android:clickable="false" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

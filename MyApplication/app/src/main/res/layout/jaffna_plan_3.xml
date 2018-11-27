@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+        app:titleTextColor="@color/cast_expanded_controller_text_color"
+        android:layout_weight="1"
+        app:title="Jaffna day 3 plan" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/plan_close_jaffna3"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_menu_information"
+        android:layout_above="@+id/scroll_near_by"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@color/cardview_light_background"
+        android:text="i" />
+
+    <ScrollView
+        android:id="@+id/scroll_near_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_near_by"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="215dp"
+                app:srcCompat="@drawable/jaffna_plan_3"
+                android:id="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/cardview_light_background" />
+
+            <Button
+                android:text="Distance of the journey: 16km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/button4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:clickable="false"
+                android:textColor="@color/cast_expanded_controller_background_color" />
+
+            <Button
+                android:text="Number of the destinations covering: 4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:textAllCaps="false"
+                android:clickable="false"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/button4"
+                android:layout_alignLeft="@+id/button4"
+                android:layout_alignStart="@+id/button4"
+                android:layout_alignRight="@+id/button4"
+                android:layout_alignEnd="@+id/button4"
+                android:textColor="@color/cast_expanded_controller_background_color" />
+
+            <Button
+                android:text="Estimated time for road traveling: 2 hours and 30mins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                android:textAllCaps="false"
+                android:clickable="false"
+                android:layout_below="@+id/button5"
+                android:layout_alignLeft="@+id/button5"
+                android:layout_alignStart="@+id/button5"
+                android:layout_marginTop="13dp"
+                android:layout_alignRight="@+id/button5"
+                android:layout_alignEnd="@+id/button5"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:text="From day1 and day 2 plans you can cover all the destinations which can be covered by road travelling. There some islands near Jaffna and in these islands there are some important destinations as well. Nainathivu and Delpht are the islands you are goint to cover from day 3 plan. There are boats from Kurukadduwan jetty to both islands. Boats are available from 8 a.m to 4 p.m\n\nYou have to travel there from boats and you can visit Nagadeepa temple and kovil and come back to Kurukadduwan jetty. Then again you have to travel to Delpht island and there are lots of places to visit in that island. There are people who like to take you small rides around the Delpht island and you can see all the important places in that islnad. The climate of this are is extremely hot and take care of it. The last boat from the Delpht island is 4 p.m and after that there are no boats to Kurukadduwan till next day morning\n\nIf you wish to stay at Delpht tonight please take care on your accommodations at day 3 night. You can search and book hotels at Delpht with the help of drawer menu. Also camping at the beach area of the island also a good option. You can carry a tent and spend your night in the tent at the Seven Wells beach.\n\nStart the journey early in the morning if possible and Keep in mind to consider on weather at Jaffna and Delpht before traveling."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="15.5sp"
+                android:layout_below="@+id/button6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

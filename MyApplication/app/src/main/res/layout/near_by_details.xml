@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details Nearby"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="normal|bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/weather_current"
+        android:layout_below="@+id/nearby_places"
+        android:background="@color/mdtp_date_picker_month_day_dark_theme"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignRight="@+id/nearby_places"
+        android:layout_alignEnd="@+id/nearby_places"
+        android:layout_alignLeft="@+id/nearby_places"
+        android:layout_alignStart="@+id/nearby_places"
+        android:text="Weather of your current location" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/nearby_map_filter"
+        android:layout_below="@+id/weather_current"
+        android:background="@color/mdtp_date_picker_month_day_dark_theme"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/weather_current"
+        android:layout_alignStart="@+id/weather_current"
+        android:layout_alignRight="@+id/weather_current"
+        android:layout_alignEnd="@+id/weather_current"
+        android:text="See nearby destinations in map" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/details_nearby"
+        android:layout_below="@+id/nearby_map_filter"
+        android:background="@color/mdtp_date_picker_month_day_dark_theme"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/nearby_map_filter"
+        android:layout_alignStart="@+id/nearby_map_filter"
+        android:layout_alignRight="@+id/nearby_map_filter"
+        android:layout_alignEnd="@+id/nearby_map_filter"
+        android:text="Explore nearby travel destinations" />
+
+    <Button
+        android:text="Travelling plans for nearby destinations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/plans_nearby"
+        android:layout_below="@+id/details_nearby"
+        android:background="@color/mdtp_date_picker_month_day_dark_theme"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_alignRight="@+id/details_nearby"
+        android:layout_alignEnd="@+id/details_nearby"
+        android:layout_alignLeft="@+id/details_nearby"
+        android:layout_alignStart="@+id/details_nearby" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button_close"
+        android:clickable="false"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.00"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/Close_near_by"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/Close_near_by"
+        android:background="@android:color/transparent"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <Button
+        android:text="Find nearby service places "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nearby_places"
+        android:background="@color/mdtp_date_picker_month_day_dark_theme"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/toolbar4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+</RelativeLayout>

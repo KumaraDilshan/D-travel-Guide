@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
+
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/nearby_details_close_anuradhapura"
+        android:background="@android:color/transparent"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_details_apura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+        app:titleTextColor="@color/cast_expanded_controller_text_color"
+        android:layout_weight="1"
+        app:title="Explore nearby travel destinations" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:clickable="false"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.00"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/nearby_details_close_anuradhapura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:id="@+id/scroll_near_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nearby_details_close_anuradhapura"
+        android:layout_alignStart="@+id/nearby_details_close_anuradhapura"
+        android:layout_below="@+id/toolbar_details_apura"
+        android:layout_above="@+id/nearby_details_close_anuradhapura">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_near_by"
+            android:weightSum="1"
+            android:layout_below="@+id/toolbar_details_apura"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Destinations around Anuradhapura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:text="Mihinthale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mihinathale"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Jaya Sri Maha Bodhiya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jaya_sri_maha_bodhi"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Ruwanwelisaya Dagaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruwanwelisaya"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="135dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Isurumuniya temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isurumuniya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="185dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Jethavanaramaya temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jethavanaramaya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="235dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Thuparamaya temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thuparamaya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="285dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Abhayagiriya temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/abayagiriya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="335dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Lovamahapaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lovahamahapaya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="385dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Kuttam pokuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kuttampokuna"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="435dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Ranmasu Uyana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ranmasu_uyana"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="485dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Thissa Wewa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thisawewa"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="535dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Nuwara Wewa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nuwarawewa"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="585dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

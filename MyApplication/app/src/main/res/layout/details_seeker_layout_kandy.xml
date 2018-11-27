@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
+
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/nearby_details_close_kandy"
+        android:background="@android:color/transparent"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:clickable="false"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.00"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/nearby_details_close_kandy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:id="@+id/scroll_near_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nearby_details_close_kandy"
+        android:layout_alignStart="@+id/nearby_details_close_kandy"
+        android:layout_below="@+id/toolbar_details_kandy"
+        android:layout_above="@+id/nearby_details_close_kandy">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_near_by"
+            android:weightSum="1"
+            android:layout_below="@+id/toolbar_details_kandy"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Destinations around Kandy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:text="Temple of the Sacred Tooth Relic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temple_of_tooth"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Pinnawala Elephant Orphanage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pinnawala"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Kandy Lake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kandy_lake"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="135dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Huluganga Ella Waterfall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hulu"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="185dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Knuckles mountain range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/knuckles"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="235dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Bahirawakanda Temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bahirawakanda"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="285dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Royal Botanic Gardens- Peradeniya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pera_garden"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="335dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Hanthana Mountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hanthana"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="385dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Udawatta Kele Sanctuary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/udawatta_lake"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="435dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Embekka Dewalaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ambakke"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="485dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:text="Lankathilaka Temple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lankathilaka"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="535dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_details_kandy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+        app:titleTextColor="@color/cast_expanded_controller_text_color"
+        android:layout_weight="1"
+        app:title="Explore nearby travel destinations"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

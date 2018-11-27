@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1D25">
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ad3737"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Help"
+        app:titleTextColor="@color/cardview_light_background"
+        android:id="@+id/help_toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/help_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="31dp"
+                    android:id="@+id/button2"
+                    android:background="@drawable/quantum_ic_play_arrow_grey600_48"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:text="Take a look for a quick tutorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView46"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:id="@+id/imageView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/logo_final1" />
+
+            <TextView
+                android:text="When the application started you have to apply your credentials. If you haven't an account already you can sign up. The sign-up forum also directed from login layout easily. The application asks to turn on location services if they are disabled at the moment. We strongly suggest to turn it on to have the full functionality of further processes."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:text="Initially the map view of Sri Lanka is loaded and in that view basically, the important traveling cities are marked by light blue markers. You can click any marker and see the destinations regarding that particular city. There is three type of cities. They are Religous destinations, cultural destinations and naturally valued places. Religious places are marked by dark blue markers. Also, cultural destinations are marked by red color markers and yellow color markers are served for naturally valued places. You can filter the cities and types of destinations by clicking the FILTER button. You can fit the map to the screen by FIT button."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:text="By selecting Details Nearby menu you can find all possible information on nearby destinations. First, you can find nearby service places such as restaurants, hotels, bars, spa, florist, coffee, delivery, parks, gyms, ATMs, filling centers and etc. Then the weather of your current city can be found and you can decide it is ok to travel or not. If you are near for any traveling destination it can be found by this menu. Their details, images, and directions also possible to reveal.  You can make your events with a mobile calendar for traveling those places. The users can have traveling plans for nearby destinations from this menu as well."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:text="Under the navigational drawer menu, you are able to Explore all travel destinations in Sri Lanka through a filter. Also, weather of any city inside the country can be found easily. It is important if you wish to travel a long distance in Sri Lanka. You also can reveal details of hotels and book them via the application. all newly planned events in the island are updated under event section. Also, you can have traveling plans for any city from this menu. ToDo event list and your favorite places are displayed when you click relevant menu items."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:textColor="@color/cardview_light_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

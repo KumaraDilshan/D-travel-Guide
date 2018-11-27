@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gerrie.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--<uses-feature android:name="android.hardware.location.gps" />-->
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="D Travel Guide"
+        android:supportsRtl="true"
+        android:configChanges="orientation"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNDs0oGEgUT5Pp_oyJMTZiXkT987pvHzM" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name=".start_animation"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="D Travel Guide"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".new3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".MapsActivity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".latlang"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".register_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".TaskHome"
+            android:theme="@style/AppThemeToolBar"/>
+
+        <activity
+            android:name=".AddTask"
+            android:theme="@style/AppThemeToolBar"/>
+
+        <activity
+            android:name=".TaskHome_favourite"
+            android:theme="@style/AppThemeToolBar"/>
+
+        <activity
+            android:name=".AddTask_favourite"
+            android:theme="@style/AppThemeToolBar"/>
+
+        <activity
+            android:name=".near_by_details"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+
+        <activity
+            android:name=".weather_lat_lang_Activity"/>
+
+        <activity
+            android:name=".General_weather_Activity"/>
+
+        <activity
+            android:name=".weather_lat_lang_Activity_notify_weather"/>
+
+        <activity
+            android:name=".filter_nearby_maps"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+
+        <activity
+            android:name=".filter_maps_main"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+
+        <activity
+            android:name=".Details_of_places_near_by"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Details_of_places_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".details_seeker_jaffna"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Details_of_places_jaffna"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".details_seeker_anuradhapura"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".details_seeker_all_cities"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".plans_all_cities"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Details_of_places_anuradhapura"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".details_seeker_kandy"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Details_of_places_kandy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".details_seeker_galle"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Details_of_places_galle"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Intro_sri_lanka"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".help"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".about_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".plans_jaffna"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".plans_apura"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".plans_kandy"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".plans_galle"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".jaffna_plan_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".jaffna_plan_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".jaffna_plan_3"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".apura_plan_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".apura_plan_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".galle_plan_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".galle_plan_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kandy_plan_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kandy_plan_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kandy_plan_3"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kandy_plan_4"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".icon_info"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+
+        </application>
+
+</manifest>

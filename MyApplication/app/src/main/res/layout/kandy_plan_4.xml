@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="#ad3737"
+        android:textAlignment="center"
+        app:titleTextColor="@color/cast_expanded_controller_text_color"
+        android:layout_weight="1"
+        app:title="Kandy day 4 plan" />
+
+    <ScrollView
+        android:id="@+id/scroll_near_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_near_by"
+        android:weightSum="1"
+        android:layout_below="@+id/scroll_near_by"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            app:srcCompat="@drawable/kandy_plan_4"
+            android:id="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_light_background" />
+
+        <TextView
+            android:text="This is the best plan for day 4. You need a separate day to cover Royal Botanic Gardens-Peradeniya. It is open from 8 a.m to 5 p.m excluding weekends and Sri Lankan government holidays. It is impossible to visit another places on the same day. There may be leeches in this destination. It would be a problem for you. So be repaired and visit. Take care about the unexpected raining too.\n\nIf you wish to travel with day 4 plans also please take care on your accommodations at day 3 night. You can search and book hotels with the help of drawer menu.\n\nStart the journey early in the morning if possible and Keep in mind to consider on weather at Kandy before traveling."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15.5sp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
